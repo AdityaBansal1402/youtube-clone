@@ -8,27 +8,32 @@ but right now you can create an account and upload your own videos!!! like, subs
 this was made in MERN so yeahh I am Basic as hell hehehe.
 
 Frontpage is kind of like this-
-![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/06389c73-dfea-4b04-8b32-a2e9e14cb288)
+![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/c1fa5d4e-78db-461f-88d7-cbdcb35a3bd8)
+
 
 
 the video page(I know there is no title it's in the state just forgot to make a div for it :C)-
-![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/cfc4ddaa-8770-4f70-ae9f-ae655b87325e)
+![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/84e080e0-08b9-4da8-85b6-c79982441a07)
+
 
 
 this is kind of a user profile page(same subscribers tag is missing just in the data too lazy to make a div and button but will doo :D)-
-![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/c77916b4-d285-413a-81ed-af4089320ff1)
+![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/3c55e3d9-19c0-4831-b275-f886434b15af)
 
 
 
 this is the community post kind of place where you can post notes for your people-
-![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/ff201402-c604-471e-bca6-4c81710b791f)
+![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/58c7693d-dc84-4db7-9b6d-876849575ac2)
+
 
 
 this is the video uploading part (yes it's bad right now I will make UI better)-
-![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/db557997-b3ff-46a8-8ac7-2b171b8810e9)
+![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/f4dd6ec2-1b99-4a1a-a0f6-fea77ab50f9b)
+
 
 
 and now this is login page with user validation and all(I know this is bad this was kind off the first thing made here so it will changee)-
-![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/8779f287-7454-4d3f-9def-26fb02648a4e)
+![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/22faef24-0653-4baf-91e2-e8624a675770)
+
 
 
