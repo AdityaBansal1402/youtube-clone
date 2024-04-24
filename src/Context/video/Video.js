@@ -12,7 +12,7 @@ const Video = (props) => {
     const [someuser,changesomeuser]=useState({name:"",email:"",subscribers:0,pic:""})
 
     // const updatelike=async(e)=>{
-    //     const response=await fetch(`https://youtube-clone-api-phi.vercel.app/api/video/like/${e}`,{
+    //     const response=await fetch(`http://localhost:5000/api/video/like/${e}`,{
     //         method: "PUT",
     //         headers:{
     //             'content-Type':'application/json'
@@ -27,7 +27,7 @@ const Video = (props) => {
     //     }
     // }
     const uploadvids=async(e)=>{
-        const response=await fetch("https://youtube-clone-api-phi.vercel.app/api/video/uploadvid",{
+        const response=await fetch("http://localhost:5000/api/video/uploadvid",{
             method: "POST",
             headers:{
                 'content-Type':'application/json',
@@ -45,7 +45,7 @@ const Video = (props) => {
 
     }
     const getvids=async()=>{
-        const response= await fetch("https://youtube-clone-api-phi.vercel.app/api/video/fetchallvideos",{
+        const response= await fetch("http://localhost:5000/api/video/fetchallvideos",{
             method: "GET",
             headers:{
                 'content-Type':"application/json",
@@ -65,7 +65,7 @@ const Video = (props) => {
     }
 
     const getuservids=async(e)=>{
-        const response= await fetch(`https://youtube-clone-api-phi.vercel.app/api/video/fetchuservideos/${e}`,{
+        const response= await fetch(`http://localhost:5000/api/video/fetchuservideos/${e}`,{
             method: "GET",
             headers:{
                 'content-Type':"application/json"
@@ -100,7 +100,7 @@ const Video = (props) => {
     }
 
     const getcomments=async(e)=>{
-        const response=await fetch(`https://youtube-clone-api-phi.vercel.app/api/comments/fetchallcomments/${e}`,{
+        const response=await fetch(`http://localhost:5000/api/comments/fetchallcomments/${e}`,{
             method: "GET",
             headers:{
                 'content-Type':'application/json',
@@ -117,7 +117,7 @@ const Video = (props) => {
     }
 
     const addcomment=async(e,i)=>{
-        const response=await fetch(`https://youtube-clone-api-phi.vercel.app/api/comments/addcomment/${e}`,{
+        const response=await fetch(`http://localhost:5000/api/comments/addcomment/${e}`,{
             method: "POST",
             headers:{
                 'content-Type':'application/json',
@@ -135,7 +135,7 @@ const Video = (props) => {
       }
 
     const islikevid=async(e)=>{
-        const response= await fetch(`https://youtube-clone-api-phi.vercel.app/api/auth//islikevid/${e}`,{
+        const response= await fetch(`http://localhost:5000/api/auth//islikevid/${e}`,{
             method: "GET",
             headers:{
                 'content-Type':"application/json",
@@ -146,7 +146,7 @@ const Video = (props) => {
         return json;
     }
     const likevid=async(e)=>{
-        const response= await fetch(`https://youtube-clone-api-phi.vercel.app/api/auth//likevid/${e}`,{
+        const response= await fetch(`http://localhost:5000/api/auth//likevid/${e}`,{
             method: "PUT",
             headers:{
                 'content-Type':"application/json",
@@ -163,7 +163,7 @@ const Video = (props) => {
         }
     }
     const dislikevid=async(e)=>{
-        const response= await fetch(`https://youtube-clone-api-phi.vercel.app/api/auth//dislikevid/${e}`,{
+        const response= await fetch(`http://localhost:5000/api/auth//dislikevid/${e}`,{
             method: "PUT",
             headers:{
                 'content-Type':"application/json",
@@ -179,7 +179,7 @@ const Video = (props) => {
         }
     }
     const getvid=async(e)=>{
-        const response= await fetch(`https://youtube-clone-api-phi.vercel.app/api/video/fetchvideos/${e}`,{
+        const response= await fetch(`http://localhost:5000/api/video/fetchvideos/${e}`,{
             method: "GET",
             headers:{
                 'content-Type':"application/json"
@@ -197,7 +197,7 @@ const Video = (props) => {
         }
     }
     const subscribeuser=async(e,i)=>{
-        const response=await fetch(`https://youtube-clone-api-phi.vercel.app/api/auth/subscribe/${e}`,{
+        const response=await fetch(`http://localhost:5000/api/auth/subscribe/${e}`,{
             method: "PUT",
             headers:{
                 'content-Type':'application/json',
@@ -215,7 +215,7 @@ const Video = (props) => {
       }
 
       const unsubscribeuser=async(e,i)=>{
-        const response=await fetch(`https://youtube-clone-api-phi.vercel.app/api/auth/unsubscribe/${e}`,{
+        const response=await fetch(`http://localhost:5000/api/auth/unsubscribe/${e}`,{
             method: "PUT",
             headers:{
                 'content-Type':'application/json',
@@ -233,7 +233,7 @@ const Video = (props) => {
       }
 
       const issub=async(e)=>{
-        const response= await fetch(`https://youtube-clone-api-phi.vercel.app/api/auth//issub/${e}`,{
+        const response= await fetch(`http://localhost:5000/api/auth//issub/${e}`,{
             method: "GET",
             headers:{
                 'content-Type':"application/json",
@@ -245,7 +245,7 @@ const Video = (props) => {
     }
 
     const getsomeuser=async(e)=>{
-        const response=await fetch(`https://youtube-clone-api-phi.vercel.app/api/auth/getsome/${e}`,{
+        const response=await fetch(`http://localhost:5000/api/auth/getsome/${e}`,{
             method: "GET",
             headers:{
                 'content-Type':'application/json'
@@ -262,7 +262,7 @@ const Video = (props) => {
     }
 
     // const getcomuser=async(e)=>{
-    //     const response=await fetch(`https://youtube-clone-api-phi.vercel.app/api/auth/getsome/${e}`,{
+    //     const response=await fetch(`http://localhost:5000/api/auth/getsome/${e}`,{
     //         method: "GET",
     //         headers:{
     //             'content-Type':'application/json'
@@ -278,7 +278,7 @@ const Video = (props) => {
     //     }
     // }
     const increaseview=async(e)=>{
-        const response=await fetch(`https://youtube-clone-api-phi.vercel.app/api/video/view/${e}`,{
+        const response=await fetch(`http://localhost:5000/api/video/view/${e}`,{
             method: "PUT",
             headers:{
                 'content-Type':'application/json',
@@ -296,7 +296,7 @@ const Video = (props) => {
 
     const getranvids = async () => {
         try {
-            const response = await fetch("https://youtube-clone-api-phi.vercel.app/api/video/randomvid", {
+            const response = await fetch("http://localhost:5000/api/video/randomvid", {
                 method: "GET",
                 headers: {
                     'Content-Type': "application/json"
