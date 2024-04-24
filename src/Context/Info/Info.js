@@ -8,7 +8,7 @@ const Info = (props) => {
     const [user,changeuser]=useState({name:"",email:""})
 
     const getuser=async()=>{
-      const response=await fetch("http://localhost:5000/api/auth/getuser",{
+      const response=await fetch("https://youtube-clone-api-phi.vercel.app/api/auth/getuser",{
           method: "GET",
           headers:{
               'content-Type':'application/json',
@@ -26,7 +26,7 @@ const Info = (props) => {
 
 
   const getinfo=async()=>{
-    const response=await fetch("http://localhost:5000/api/notes/fetchallnotes",{
+    const response=await fetch("https://youtube-clone-api-phi.vercel.app/api/notes/fetchallnotes",{
         method: "GET",
         headers:{
             'content-Type':'application/json',
@@ -45,7 +45,7 @@ const Info = (props) => {
     }
 }
 const getnote=async(e)=>{
-  const response=await fetch("http://localhost:5000/api/notes/addnotes",{
+  const response=await fetch("https://youtube-clone-api-phi.vercel.app/api/notes/addnotes",{
       method: "POST",
       headers:{
           'content-Type':'application/json',
@@ -62,7 +62,7 @@ const getnote=async(e)=>{
   }
 }
 const updatenote=async(e)=>{
-  const response=await fetch(`http://localhost:5000/api/notes/updatenote/${e.id}`,{
+  const response=await fetch(`https://youtube-clone-api-phi.vercel.app/api/notes/updatenote/${e.id}`,{
       method: "PUT",
       headers:{
           'content-Type':'application/json',
@@ -80,7 +80,7 @@ const updatenote=async(e)=>{
 }
 
 const deletenote=async(e)=>{
-  const response=await fetch(`http://localhost:5000/api/notes/deletenote/${e.id}`,{
+  const response=await fetch(`https://youtube-clone-api-phi.vercel.app/api/notes/deletenote/${e.id}`,{
       method: "DELETE",
       headers:{
           'content-Type':'application/json',
