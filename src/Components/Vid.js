@@ -15,6 +15,21 @@ const Video = () => {
   const params = useParams();
   const video = params.id;
   const [percentageWatched, setPercentageWatched] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   const handleProgress = (state) => {
     const { playedSeconds, loadedSeconds } = state;
@@ -91,7 +106,7 @@ const Video = () => {
   }
   return (
     <div className={`pl-16 pt-24 bg-gray-900 min-h-screen !overflow-hidden`}>
-        <div className='flex justify-evenly'>
+        <div className={`flex ${screenWidth<=769?"flex-col":""} justify-evenly`}>
             {
                 <div className="basis-8/12">
                 <div className='rounded-lg overflow-hidden aspect-video '>
