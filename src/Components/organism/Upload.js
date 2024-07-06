@@ -72,7 +72,7 @@ const Upload = () => {
                 <input type='file' name='image' id='image' accept='image/*' placeholder='Thumbnail' className='' onChange={(e)=>{setimg(e.target.files[0])}}/>
                 )}<label htmlFor='image'>Upload the video</label>
                 {vidperc>0?("Uploading"+vidperc+"%"):(<input type='file' name='video' id='video' accept='video/*' placeholder='video' className=''onChange={(e)=>{setvid(e.target.files[0])}}/>
-                )}<button type='submit' className='bg-gray-700 max-w-36 ml-[35%] mt-10'>Upload</button>
+                )}<button type='submit' className={` w-fit p-2 rounded-lg ml-[35%] mt-10 ${(vidperc==100 && imgperc==100)?"bg-zinc-900 text-white":"bg-zinc-700"}`} disabled={!(vidperc == 100 && imgperc == 100)}>{(vidperc==100 && imgperc==100)?"Upload":((vidperc==0 && imgperc==0)?"Upload Your Vid!":"Uploading Please wait...")}</button>
             </form>
         </div>
     </div>
