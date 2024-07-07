@@ -27,13 +27,16 @@ this is the community post kind of place where you can post notes for your peopl
 
 
 
-this is the video uploading part (yes it's bad right now I will make UI better)-
-![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/f4dd6ec2-1b99-4a1a-a0f6-fea77ab50f9b)
+this is the video uploading part -
+![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/14794b80-e95c-4eff-ad27-125d8c038d86)
 
 
 
-and now this is login page with user validation and all(I know this is bad this was kind off the first thing made here so it will changee)-
-![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/22faef24-0653-4baf-91e2-e8624a675770)
+and now this is login page with user validation and all-
+Sign in page-
+![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/d66d60f0-c8eb-40ff-b092-3f647a6a988f)
+Create Account page-
+![image](https://github.com/AdityaBansal1402/youtube-clone/assets/98232752/580d1fea-548c-4f6d-860e-bfe140d09831)
 
 
 
