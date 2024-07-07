@@ -13,6 +13,20 @@ const Upload = () => {
     const [vid,setvid]=useState(undefined);
     const [vidperc,setvidperc]=useState(0);
     const [imgperc,setimgperc]=useState(0);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
     const onchange=(e)=>{
         setcont({...cont,[e.target.name]:e.target.value});
     }
@@ -62,9 +76,9 @@ const Upload = () => {
         history('/profile/about')}
     }
   return (
-    <div>
-        <div className='text-gray-400 pt-10 flex flex-wrap pl-36'>
-            <form className='font-mono flex flex-col' onSubmit={(e)=>handlesubmit(e)}>
+    <div className=''>
+        <div className='text-gray-400 pt-10 flex flex-wrap justify-center items-center ml-[5%]'>
+            <form className={`font-mono ${(screenWidth>900)?'w-[50%]':'w-[85%]'} bg-opacity-20 backdrop-filter backdrop-blur-sm bg-gray-700 rounded-lg p-[5%] flex flex-col relative`} onSubmit={(e)=>handlesubmit(e)}>
                 <input type='text' name='title' placeholder='Title' value={cont.title} onChange={onchange} className='placeholder-gray-200 bg-gray-700 pl-4 pt-1 pb-1 focus:outline-gray-500 focus:outline-none rounded'/>
                 <textarea name='description' rows={7} cols={50} placeholder='Description' value={cont.description} onChange={onchange} className='placeholder-gray-200 bg-gray-700 pl-4 pt-1 pb-1 focus:outline-gray-500 focus:outline-none rounded mt-4 resize-none'/>
                 <label htmlFor='image'>Select a Thumbnail</label>
