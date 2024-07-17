@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <nav className={`p-2 ${light ? 'bg-gray-50' : 'bg-gray-950'} fixed top-0 w-full z-50`}>
-      <div className='flex justify-center space-x-[33%]'>
+      <div className='flex justify-center space-x-[30%]'>
         <div>
           <Link to='/'>
             <svg
